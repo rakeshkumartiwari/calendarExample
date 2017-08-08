@@ -50,6 +50,10 @@
                     }
                 ]
             });
+
+
+
+
             //$('#calendar').fullCalendar({
             //    header: {
             //        left: 'prev,next today',
