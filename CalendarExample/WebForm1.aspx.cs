@@ -24,17 +24,20 @@ namespace CalendarExample
 
             EmployeeList.Add(new Employee
             {
-                Id=111,
-                Name = "Rakesh",
-                StartDate = "2017-05-09",
-                EndDate = "2017-05-10"
+                id=111,
+                title = "Rakesh",
+                start = "2017-05-09",
+                end = "2017-05-10",
+                backgroundColor="blue"
             });
             EmployeeList.Add(new Employee
             {
-                Id=222,
-                Name = "Vikash",
-                StartDate = "2017-05-14",
-                EndDate = "2017-05-18"
+                id=222,
+                title = "Vikash",
+                start = "2017-05-14",
+                end = "2017-05-19",
+                backgroundColor="red"
+
             });
 
 
@@ -44,10 +47,11 @@ namespace CalendarExample
     }
     public class Employee
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string StartDate { get; set; }
-        public string EndDate { get; set; }
+        public int id { get; set; }
+        public string title { get; set; }
+        public string start { get; set; }
+        public string end { get; set; }
+        public string backgroundColor { get; set; }
     }
 }
 

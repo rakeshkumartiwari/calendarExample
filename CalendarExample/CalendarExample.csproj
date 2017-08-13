@@ -14,7 +14,7 @@
     <RootNamespace>CalendarExample</RootNamespace>
     <AssemblyName>CalendarExample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -61,6 +61,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\fullcalendar.min.css" />
+    <Content Include="css\fullcalendar.print.css" />
+    <Content Include="css\myStylesheet.css" />
     <Content Include="demos\agenda-views.html" />
     <Content Include="demos\background-events.html" />
     <Content Include="demos\basic-views.html" />
@@ -80,7 +83,7 @@
     <Content Include="fullcalendar.css" />
     <Content Include="fullcalendar.js" />
     <Content Include="fullcalendar.min.css" />
-    <Content Include="fullcalendar.min.js" />
+    <Content Include="lib\fullcalendar.min.js" />
     <Content Include="fullcalendar.print.css" />
     <Content Include="fullcalendar.print.min.css" />
     <Content Include="gcal.js" />
@@ -171,6 +174,7 @@
     <Content Include="locale\vi.js" />
     <Content Include="locale\zh-cn.js" />
     <Content Include="locale\zh-tw.js" />
+    <Content Include="myStylesheet.css" />
     <Content Include="packages.config" />
     <Content Include="demos\json\events.json" />
     <None Include="Web.Debug.config">
@@ -219,7 +223,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50458</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50458/</IISUrl>
+          <IISUrl>http://localhost/CalendarExample</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
