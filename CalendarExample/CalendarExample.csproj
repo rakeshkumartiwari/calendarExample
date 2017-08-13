@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="calendar-with-popup.aspx" />
     <Content Include="css\fullcalendar.min.css" />
     <Content Include="css\fullcalendar.print.css" />
     <Content Include="css\myStylesheet.css" />
@@ -187,15 +188,31 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="JavaScript.js" />
+    <Content Include="select-dates.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="calendar-with-popup.aspx.cs">
+      <DependentUpon>calendar-with-popup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calendar-with-popup.aspx.designer.cs">
+      <DependentUpon>calendar-with-popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="select-dates.aspx.cs">
+      <DependentUpon>select-dates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="select-dates.aspx.designer.cs">
+      <DependentUpon>select-dates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
